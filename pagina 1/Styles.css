@@ -1,0 +1,286 @@
+
+
+
+
+
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+ 
+  background-image: url(assets/Archer\ and\ blade\ master.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  
+}
+
+header{
+  display: flex;
+  background-color: #85311F ;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  }
+  
+  header .Icon img{
+  height: 100px;
+  width: auto;
+  
+  }
+  header .Icon img:hover{
+  cursor: pointer;
+  
+  
+  }
+  .link-bar ul li{
+    list-style: none;
+    display: inline-block;
+  }
+  .link-bar ul li a{
+      
+      color: aliceblue;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0 20px;
+      transition: all 0.3s;
+     
+  }
+  
+.link-bar ul li a:hover{color: yellow;}
+
+
+#welcome{
+padding: 20px 20px 0px 20px;
+ color:whitesmoke;
+ text-align: center;
+}
+
+#news{
+display: grid;
+justify-content: space-around;
+grid-template-columns: repeat(3, auto);
+row-gap:100px;
+margin-top: 50px;
+cursor: pointer;
+background-image: url(assets/Background\ News.jpg);
+border-radius: 10px;
+
+}
+#news .item-news{
+transition: 0.6s;
+
+}
+
+#news .item-news:hover{
+  transform:scale(1.3);
+}
+
+#news .item-news .text-item{
+
+font-size: 0.7rem;
+color: white;
+background-image: url(assets/Comision.png);
+background-attachment:fixed;
+background-size: cover ;
+border: 2px  black solid;
+text-transform: uppercase;
+}
+
+
+#news .item-news img{
+  margin-top: 40px;
+width: 190px;
+height:190px;
+border: 2px black solid;
+background-color: white;
+border-radius: 20px;
+
+}
+
+
+
+h1, h2{
+font-size: 2rem;
+color: #FFA500;
+text-align: center;
+text-transform: uppercase;
+
+
+}
+b,p{
+  margin: 20px 0 40px 0;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+
+#check{
+  display: none;
+}
+
+.Bttn{
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width:550px){
+.Bttn {display: block;}
+footer{flex-direction: column;}
+  
+#news {
+  display: flex;
+flex-direction: column;
+}
+
+ul {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/gremio.jpg);
+  background-size:cover ;
+  top: 105px;
+  padding-top: 110px;
+  right: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  }
+.link-bar ul li{
+display: block;
+line-height: 30px;
+margin: 50px 0;
+text-transform: uppercase;
+}
+
+
+.link-bar ul li a{font-size: 1.5rem;}
+
+#check:checked + ul  {right: 0;}
+
+#news .item-news .text-item{font-size: 1rem;}
+#news .item-news:hover{transform:scale(0.8);}
+h1,h2{font-size: 1.4rem;}
+b,p{font-size: 1.2rem;}
+
+
+}
+
+
+@media only screen and (min-width:550px){
+
+  .link-bar ul li a{
+    padding: 0 5px;
+  }
+
+
+
+#news{grid-template-columns: repeat(2, auto);}
+
+h1{font-size: 1.6rem;}
+b,p{font-size: 1.4rem;}
+
+
+
+
+#news .item-news .text-item{
+ 
+  font-size: 1rem;}
+
+
+#news .item-news:hover{
+  transform:scale(0.8);
+}
+
+
+
+}
+
+
+@media only screen and (min-width:800px){
+
+  
+  
+  
+  .link-bar ul li a{
+    
+    font-size: 1.2rem; 
+    padding: 0 10px;
+  }
+ 
+ 
+ 
+ h1,h2{font-size: 1.8rem;}
+
+  b,p{font-size: 1.6rem;}
+
+  #news .item-news a img{margin: 20px;}
+ 
+  #news .item-news:hover{
+    transform:scale(0.9);
+  }
+
+
+}
+
+@media only screen and (min-width:1000px){
+
+  #news{grid-template-columns: repeat(2, auto);}
+  .link-bar ul li a{
+     padding: 0 15px;
+    font-size: 1.4rem;
+  }
+  
+  h1,h2{font-size: 2rem;}
+
+  b,p{font-size: 1.8rem;}
+ 
+  #news .item-news:hover{transform:scale(1.1);}
+}
+
+@media only screen and (min-width:1300px){
+
+#news{grid-template-columns: repeat(3, auto)}
+
+
+
+}
+
+
+
+
+
+footer{
+display: flex;
+flex-wrap: wrap;
+background-color:#A74B37 ;
+justify-content: space-around;
+align-items: center;
+height: 180px;
+
+}
+
+.footer-links{
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color:white;
+  color: chocolate;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition:  all 0.3s;
+
+}
+.footer-links:hover{transform: scale(1.2);}
+
+.footer-links:hover{color: yellow;}
+

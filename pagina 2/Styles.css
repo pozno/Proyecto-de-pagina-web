@@ -1,0 +1,395 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+
+
+
+body{
+ background-image: url(assets/MainPageB.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ overflow-x: hidden;
+}
+
+
+ header{
+    display: flex;
+    background-color:  #85311F;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    }
+    
+ header .Icon img{
+    height: 100px;
+    width: auto;
+    
+    }
+ header .Icon img:hover{
+    cursor: pointer;
+   
+    
+    }
+    
+.link-bar ul li{
+
+        list-style: none;
+    display: inline-block;
+    }
+
+.link-bar ul li a{
+
+   color: white;
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 0 20px;
+   transition: all 0.3s;
+  }
+
+.link-bar ul li a:hover{
+    color: yellow;
+}
+
+#Lore{
+  color: whitesmoke;
+text-align: justify;
+padding: 20px 20px 0 20px;
+}
+
+
+
+
+h1{
+font-size: 2rem;
+color: #FFA500;
+text-align: center;
+text-transform: uppercase;
+}
+
+h2{
+  font-size: 1.6rem;
+  padding: 50px 0 50px 20px;
+  text-transform: uppercase;
+}
+
+b{
+  text-decoration: underline;
+}
+
+p,b{
+  margin: 20px 0 40px 0;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+
+
+.Weapons {
+  display: grid;
+  color: whitesmoke;
+  text-align: justify;
+  padding: 20px 20px 0 20px;
+  margin-top: 50px;
+  background-image: url(assets/Background\ News.jpg);
+ border-radius: 10px;
+  border: 2px none;
+  justify-content: center;
+
+
+
+}
+
+
+
+  #check{
+    display: none;
+}
+
+
+.Bttn{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:550px){
+.Bttn{display: block;}
+footer{flex-direction: column;}
+
+ul{
+position: fixed;
+height: 100%;
+width: 100%;
+background-image: url(assets/gremio.jpg);
+background-size: cover;
+top: 105px;
+padding-top: 110px; 
+right: -100%;
+text-align: center;
+transition: all 0.5s;
+
+}
+
+.link-bar ul li{
+display: block;
+line-height: 30px;
+margin: 50px 0;
+text-transform: uppercase;
+}
+
+.link-bar ul li a{font-size: 1.5rem;}
+
+#check:checked + ul{right: 0;}
+h1,h2{ 
+  font-size: 1.4rem;
+  }
+  
+b,p{
+  
+  padding: 0px 20px;
+  font-size: 1.2rem;}
+
+
+
+  
+.espadalarga{width: 400px;}
+
+.granespada{
+  height: 300px;
+  width: 300px;}
+
+.SnS{
+  height: 300px;
+  width:400px;     }
+
+.dagasduales{height: 350px;}
+
+.lanza{ width: 400px;}
+
+.lanzapistola{
+  width: 350px;
+  height: 350px;}
+
+.martillo{
+  width: 300px;
+  height: 270px;}
+
+.cuerno{
+  width: 300px;
+  height: 300px;}
+
+.insect{width: 400px;}
+
+.hachaespada{
+  width: 350px;
+  height: 350px;}
+
+.hachacargada{
+  width: 300px;
+  height: 300px;}
+
+.arco{
+  width: 400px;
+  height: 400px;}
+
+.ballestap{
+  width:300px;
+  height: 250px;}
+
+.ballestal{width: 400px;}
+}
+
+
+
+@media only screen and (min-width:550px){
+  
+  .link-bar ul li a{padding: 0 5px;}
+
+  h1,h2{font-size: 1.6rem;}
+  b,p{font-size: 1.4rem;}
+
+  
+
+
+  .espadalarga{width: 400px;}
+
+  .granespada{
+    height: 300px;
+    width: 300px;}
+  
+  .SnS{
+    height: 300px;
+    width:400px;     }
+  
+  .dagasduales{height: 350px;}
+  
+  .lanza{ width: 400px;}
+  
+  .lanzapistola{
+    width: 350px;
+    height: 350px;}
+  
+  .martillo{
+    width: 300px;
+    height: 270px;}
+  
+  .cuerno{
+    width: 300px;
+    height: 300px;}
+  
+  .insect{width: 400px;}
+  
+  .hachaespada{
+    width: 350px;
+    height: 350px;}
+  
+  .hachacargada{
+    width: 300px;
+    height: 300px;}
+  
+  .arco{
+    width: 400px;
+    height: 400px;}
+  
+  .ballestap{
+    width:300px;
+    height: 250px;}
+  
+  .ballestal{width: 400px;}
+
+
+
+
+
+
+  
+ 
+
+}
+
+@media only screen and (min-width:800px) {
+  
+
+  
+  .link-bar ul li a{
+    
+    font-size: 1.2rem; 
+    padding: 0 10px;}
+
+    
+ h1,h2{font-size: 1.8rem;}
+
+  b,p{font-size: 1.6rem;}
+  
+.espadalarga{width: 600px;}
+
+.granespada{
+  height: 450px;
+  width: 450px;}
+
+.SnS{
+  height: 450px;
+  width:550px;     }
+
+.dagasduales{height: 550px;}
+
+.lanza{ width: 600px;}
+
+.lanzapistola{
+  width: 550px;
+  height: 550px;}
+
+.martillo{
+  width: 480px;
+  height: 400px;}
+
+.cuerno{
+  width: 450px;
+  height: 450px;}
+
+.insect{width: 600px;}
+
+.hachaespada{
+  width:  600px;
+  height: 550px;}
+
+.hachacargada{
+  width: 400px;
+  height: 400px;}
+
+.arco{
+  width: 600px;
+  height: 600px;}
+
+.ballestap{
+  width:500px;
+  height: 350px;}
+
+.ballestal{width: 600px;}
+  
+  
+  
+  
+  
+ 
+ 
+ 
+
+
+}
+
+@media only screen and (min-width:1000px){
+
+    
+  .link-bar ul li a{
+    
+    font-size: 1.4rem; 
+    padding: 0 15px;
+  }
+
+ 
+ 
+ h1,h2{font-size: 2rem;}
+
+  b,p{font-size: 1.8rem;}
+  
+}
+
+
+
+
+
+footer{
+display: flex;
+flex-wrap: wrap;
+background-color: #A74B37;
+justify-content:space-around;
+align-items: center;
+height: 180px;
+}
+
+.footer-links{
+font-size: 1.2rem;
+text-decoration: none;
+color: chocolate;
+background-color: white;
+width: 150px;
+border-radius: 20px;
+text-align: center;
+text-transform: uppercase;
+transition: all 0.3s;
+
+}
+
+.footer-links:hover{transform: scale(1.2);}
+
+.footer-links:hover{color: yellow;}
+

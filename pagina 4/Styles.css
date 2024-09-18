@@ -1,0 +1,272 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    background-image: url(assets/yian\ kut\ kut.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+
+  header{
+    display: flex;
+    background-color: #85311F ;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    }
+    header .Icon img{
+      height: 100px;
+      width: auto;
+      }
+     
+
+header .Icon img:hover{
+cursor: pointer;
+
+
+}
+
+.link-bar ul li{
+    display: inline-block;
+  list-style: none;
+    
+  
+}
+
+.link-bar ul li a{
+
+text-decoration: none;
+text-transform: uppercase;
+color:white;
+padding: 0 20px;
+transition: all 0.3s;
+}
+
+
+
+.link-bar ul li a:hover{color: yellow;}
+
+
+
+header .icon img:hover{cursor: pointer;}
+
+
+
+
+
+h1{font-size: 2rem;
+margin: 20px 0;
+padding: 0 20px;
+color: #FFA500;}
+
+h2{color: white;
+font-size: 1.6rem;
+margin: 20px 0;}
+
+.Game-r{
+  margin-top: 20px;
+  margin-bottom: 80px;
+border-radius: 20px;
+  width: 500px;}
+
+p,b{
+  
+  font-size: 1.4rem;}
+
+
+.Newver{
+color: white;
+padding: 20px;
+text-align: left;
+
+
+
+
+}
+
+
+  
+
+
+.L1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+list-style: none;
+margin: 40px 0 0 0; 
+background-image: url(assets/Background\ News.jpg);
+border-radius:10px;
+}
+
+.L1 .Advice{
+  display: grid;
+text-align: left;
+  padding: 40px;
+}
+
+.L1 .Advice p{
+ color: white; 
+background-color: #85311F;
+border-radius: 10px;}
+
+.L1 .Advice h2{
+
+ text-align: center;
+  background-color: brown;
+  border-radius:20px ;
+}
+
+
+
+
+
+
+#check{display:none;}
+
+
+.Bttn{display: none;}
+
+@media only screen and (max-width:550px){
+
+  .Bttn{display: block;}
+  footer{flex-direction: column;}
+  
+  ul{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(assets/gremio.jpg);
+  background-size: cover;
+  top: 105px;
+  padding-top: 110px; 
+  right: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  
+  }
+  
+  .link-bar ul li{
+  display: block;
+  line-height: 30px;
+  margin: 50px 0;
+  text-transform: uppercase;
+  }
+
+  .link-bar ul li a{font-size: 1.5rem;}
+  
+  
+  #check:checked + ul{right: 0;}
+
+  h1,h2{ 
+    font-size: 1.4rem;
+    }
+    
+  b,p{
+    
+    padding: 0px 20px;
+    font-size: 1.2rem;}
+  
+.Game-r{width:300px;}  
+
+
+
+}
+
+
+@media only screen and (min-width:550px){
+
+  .link-bar ul li a{padding: 0 5px;}
+
+  h1,h2{font-size: 1.6rem;}
+  b,p{font-size: 1.4rem;}
+
+  .Game-r{width:400px;}  
+}
+
+
+
+@media only screen and (min-width:800px){
+  .link-bar ul li a{
+    
+    font-size: 1.2rem; 
+    padding: 0 10px;}
+  
+  
+    h1,h2{font-size: 1.8rem;}
+
+    b,p{font-size: 1.6rem;}
+  
+    .Game-r{width:500px;}
+
+
+
+
+  }
+
+@media only screen and (min-width:1000px){
+
+
+  .link-bar ul li a{
+    
+    font-size: 1.4rem; 
+    padding: 0 15px;
+  }
+
+ 
+ 
+ h1,h2{font-size: 2rem;}
+
+  b,p{font-size: 1.8rem;}
+
+  .Game-r{width: 600px;}
+  
+}
+
+
+
+
+
+
+footer{
+display: flex;
+flex-wrap: wrap;
+background-color:#A74B37 ;
+justify-content: space-around;
+align-items: center;
+height: 180px;
+
+
+
+
+}
+
+
+
+ .footer-links{
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+background-color:white;
+color: chocolate;
+width: 150px;
+font-size: 1.2rem;
+border-radius: 20px;
+transition: all 0.3s;
+
+
+ }
+
+
+ .footer-links:hover{transform: scale(1.2);}
+
+ .footer-links:hover{color: yellow;}

@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    
+    body{
+        background-image: url(assets/Monstruos.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-x: hidden;
+      }
+      
+    
+    
+    header{
+    display: flex;
+    background-color: #85311F ;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    }
+    
+    header .Icon img{
+    height: 100px;
+    width: auto;
+    }
+   
+    header .Icon img:hover{cursor: pointer;}
+
+    #check{display: none;}
+    
+    .Bttn{display: none;}
+
+
+    .link-bar ul li{
+        display: inline-block;
+        list-style: none;
+     
+        
+    }
+
+
+
+    .link-bar ul li a{
+
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        
+        padding: 0 20px;
+        transition: all 0.3s;
+    
+    }
+
+    .link-bar ul li a:hover{
+
+        cursor: pointer;
+        color: yellow;
+    }
+
+
+
+
+#W{
+
+padding: 20px 20px 0 20px;
+
+}
+
+
+
+#Types{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+column-gap: 20px;
+row-gap: 20px;
+justify-content: center;
+
+background-image: url(assets/Background\ News.jpg);
+
+}
+
+
+
+#Types div{
+padding: 20px;}
+
+
+
+h1{
+    color: brown;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+ h2{
+    color: brown;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+
+}
+
+
+p{
+font-size: 1.4rem;
+color: white;
+padding: 0 40px ;
+margin: 40px 0 ;
+
+}
+
+
+td,th{border: 2px black solid;}
+
+table{margin: 40px 0 80px 60px;}
+
+
+#Demo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-image: url(assets/Background\ News.jpg);
+
+}
+
+.Kut{
+    background-image: url(assets/Fondo\ Yian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    
+    width: 400px;}
+
+
+.Nar{ 
+    background-image: url(assets/Fondo\ Nargacuga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 550px;
+    height: 300px;
+}
+
+.Rat{
+    background-image: url(assets/Fondo\ Rathalos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 500px;}
+
+.Ple{
+    background-image: url(assets/Fondo\ Plesioth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 550px;}
+
+.Dev{
+    background-image: url(assets/Fondo\ Deviljo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 500px;}
+
+.Raj{
+    background-image: url(assets/Fondo\ Rajang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 400px;}
+
+.Cap{
+    background-image: url(assets/Fonde\ Cenataur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 500px;}
+
+.Fat{
+    background-image: url(assets/Fondo\ Fatalys.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 600px;}
+
+.Sha{
+    background-image: url(assets/Fondo\ Shagaru.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 650px;}
+
+
+
+
+
+
+@media only screen and (max-width:550px){
+.Bttn{display: block;}
+footer{flex-direction:column;}
+#Types{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: justify;
+  
+
+}
+
+
+ul{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/gremio.jpg);
+    background-size: cover;
+    
+    top: 105px;
+    padding-top: 110px; 
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    
+    }
+    .link-bar ul li{
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+        text-transform: uppercase;
+        }
+
+    .link-bar ul li a{font-size: 1.5rem;}
+
+   #check:checked + ul{right: 0;}
+
+
+
+
+
+    h1,h2{font-size: 1.4rem;}
+    p{font-size: 1.2rem;}
+
+#Demo img{margin-left: 50px; }
+    
+.Kut{width: 300px;}
+    
+.Nar{ width: 300px;
+        height: 200px; }
+
+.Rat{width: 300px;}
+    
+.Ple{width: 300px;
+    height: 300px;}
+       
+.Dev{width: 300px;}
+
+.Raj{ width: 300px;
+      height: 250px;}
+    
+.Cap{ width: 300px;}
+    
+.Fat{width: 300px;}
+    
+.Sha{height: 350px;}
+}
+
+
+@media only screen and (min-width:550px){
+
+    #Types{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: justify;}
+
+.link-bar ul li{padding: 0 5px;}
+ 
+
+
+        h1,h2{font-size: 1.6rem;}
+        
+        p{font-size: 1.4rem;}
+    
+        #Demo img{margin-left: 80px;}
+    
+        .Kut{width: 400px;}
+            
+        .Nar{ width: 400px;
+                height: 300px; }
+        
+        .Rat{width: 400px;}
+            
+        .Ple{width: 400px;
+            height: 400px;}
+               
+        .Dev{width: 400px;}
+        
+        .Raj{ width: 400px;
+              height: 250px;}
+            
+        .Cap{ width: 400px;}
+            
+        .Fat{width: 400px;}
+            
+        .Sha{height: 450px;}
+        
+ }
+
+
+
+
+
+
+ @media only screen and (min-width:800px){
+
+
+   .link-bar ul li a{
+    padding: 0 10px;
+    font-size: 1.2rem;}
+
+    h1,h2{font-size: 1.8rem;}
+    p{font-size: 1.6rem;}
+
+
+    #Demo img{margin-left: 200px;}
+
+}
+
+
+@media only screen and (min-width:1000px){
+
+.link-bar ul li a {
+padding: 0 15px;
+font-size: 1.4rem;
+
+
+}
+
+#Demo img{margin-left: 250px;}
+
+h1,h2{font-size: 2rem;}
+
+p{font-size: 1.8rem;}
+
+
+
+  .Kut{width: 450px;}
+            
+
+  .Nar{ width: 500px;
+                height: 300px; }
+        
+  .Rat{width: 500px;}
+            
+  .Ple{width: 500px;
+            height: 500px;}
+               
+  .Dev{width: 500px;}
+        
+  .Raj{ width: 500px;
+              height: 350px;}
+            
+  .Cap{ width: 500px;}
+            
+  .Fat{width: 500px;}
+            
+  .Sha{height: 550px;}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width:1300px){
+
+
+    #Demo img{margin-left: 420px;}
+
+
+}
+
+
+
+
+   footer{
+   display: flex;
+   flex-wrap: wrap;
+   background-color:#A74B37 ;
+   justify-content: space-around;
+   align-items: center;
+   height: 180px;
+   }
+
+
+   .footer-links{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1.2rem;
+   background-color:white;
+   color: chocolate;
+   width: 150px;
+   text-align: center;
+   border-radius: 20px;
+   transition: all 0.3s;
+}
+
+.footer-links:hover{color: yellow;}
+
+.footer-links:hover{transform: scale(1.2);}
